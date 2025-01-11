@@ -18,7 +18,10 @@ pipeline {
         // build the project and create a JAR file
         sh 'cd java-maven-sonar-argocd-helm-k8s/spring-boot-app' 
         sh 'apt-get update'
+        sh 'apt install openjdk-17-jre'
+        sh 'java -version'
         sh 'apt install maven -y'
+        sh 'mvn -version'
         sh 'mvn clean package'
       }
     }
