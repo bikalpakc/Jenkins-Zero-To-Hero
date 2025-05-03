@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: bikalpakc/jenkins-java-maven-webapp-cicd:34
+        image: bikalpakc/jenkins-java-maven-webapp-cicd:13
         ports:
         - containerPort: 8080
